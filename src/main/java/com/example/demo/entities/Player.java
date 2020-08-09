@@ -4,15 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Entity@Data@NoArgsConstructor@AllArgsConstructor
+@Entity@Data@NoArgsConstructor@AllArgsConstructor@Table(name="player")
 public class Player {
+
     @Id@GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Integer id;
     private String name;
     private Long numTel;
     private String mail;
