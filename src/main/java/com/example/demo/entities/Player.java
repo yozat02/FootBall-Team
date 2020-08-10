@@ -16,4 +16,5 @@ public class Player {
     private String mail;
     private String status;
     private String poste;
+
 }
